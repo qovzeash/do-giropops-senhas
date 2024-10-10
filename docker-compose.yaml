@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  giropops-senhas:
+    image: qovzeash/giropops-senhas:1.0
+    container_name: giropops-senhas
+    environment:
+      REDIS_HOST: redis
+    ports:
+      - "5001:5000"
+
+  redis:
+   image: redis:7.4-alpine
+   container_name: redis
+   ports:
+     - "6379:6379"
