@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   giropops-senhas:
-    image: qovzeash/giropops-senhas:1.0
+    image: qovzeash/giropops-senhas:2.0
     container_name: giropops-senhas
     environment:
       REDIS_HOST: redis
